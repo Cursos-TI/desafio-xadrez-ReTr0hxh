@@ -1,32 +1,198 @@
 #include <stdio.h>
 
-// Desafio de Xadrez - MateCheck
-// Este código inicial serve como base para o desenvolvimento do sistema de movimentação das peças de xadrez.
-// O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
-
 int main() {
-    // Nível Novato - Movimentação das Peças
-    // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
 
-    // Implementação de Movimentação do Bispo
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
+    int i = 0;
+    int opcao, opcao2;
 
-    // Implementação de Movimentação da Torre
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
+    //escolhendo a peça
+    printf("Escolha uma peça do tabuleiro para jogar \n");
+    printf("1 - Torre \n");
+    printf("2 - Bispo \n");
+    printf("3 - Rainha \n");
+    printf("Digite uma opção \n");
+    scanf("%d", &opcao);
 
-    // Implementação de Movimentação da Rainha
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
+    //escolhendo a posiçao que a peça vai se movimentar
+    switch (opcao)
+    {
+    case 1:
+        printf("Peça escolhida: Torre \n");
+        printf("Escolha a posição que a peça vai se movimentar \n");
+        printf("1 - cima \n");
+        printf("2 - baixo \n");
+        printf("3 - esquerda \n");
+        printf("4 - direita \n");
+        printf("Digite uma opção \n");
+        scanf("%d", &opcao2);
 
-    // Nível Aventureiro - Movimentação do Cavalo
-    // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
-    // Um loop pode representar a movimentação horizontal e outro vertical.
+        //movimento da peça
+        switch (opcao2)
+        {
+        case 1:
+            for ( i = 0; i < 5; i++)
+            {
+                printf("cima \n");
+            }          
+            break;
+        case 2:
+            for ( i = 0; i < 5; i++)
+            {
+                printf("baixo \n");
+            }
+            break;
+        case 3:
+            for ( i = 0; i < 5; i++)
+            {
+                printf("esquerda \n");
+            }
+            break;
+        case 4:
+            for ( i = 0; i < 5; i++)
+            {
+                printf("direita \n");
+            }
+            break;     
+        default:
+            printf("Opção invalida \n");
+            break;
+        }
 
-    // Nível Mestre - Funções Recursivas e Loops Aninhados
-    // Sugestão: Substitua as movimentações das peças por funções recursivas.
-    // Exemplo: Crie uma função recursiva para o movimento do Bispo.
 
-    // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
-    // Inclua o uso de continue e break dentro dos loops.
+        break;
+    case 2:
+        printf("Peça escolhida: Bispo \n");
+        printf("Escolha a posição que a peça vai se movimentar \n");
+        printf("1 - Diagonal cima direita \n");
+        printf("2 - Diagonal cima esquerda \n");
+        printf("3 - Diagonal baixo direita \n");
+        printf("4 - Diagonal baixo esquerda \n");
+        printf("Digite uma opção \n");
+        scanf("%d", &opcao2);
 
+        //movimento da peça
+
+        switch (opcao2)
+        {
+        case 1:
+            while (i <= 4)
+            {
+                printf("Cima direita \n"); 
+                i++;          
+            }   
+            break;
+        case 2:
+            while (i <= 4)
+            {
+                printf("Cima esquerda \n");
+                i++;          
+            } 
+            break;
+        case 3:
+            while (i <= 4)
+            {
+                printf("baixo direita \n");
+                i++;           
+            } 
+            break;
+        case 4:
+            while (i <= 4)
+            {
+                printf("baixo esquerda \n"); 
+                i++;          
+            }   
+            break;     
+       default:
+            printf("Opção invalida \n");
+        break;
+       }
+
+        break;
+    case 3:
+        printf("Peça escolhida: Rainha \n");
+        printf("Escolha a posição que a peça vai se movimentar \n");
+        printf("1 - cima \n");
+        printf("2 - baixo \n");
+        printf("3 - esquerda \n");
+        printf("4 - direita \n");
+        printf("5 - Diagonal cima direita \n");
+        printf("6 - Diagonal cima esquerda \n");
+        printf("7 - Diagonal baixo direita \n");
+        printf("8 - Diagonal baixo esquerda \n");
+        printf("Digite uma opção \n");
+        scanf("%d", &opcao2);
+
+        //movimento da peça
+
+        switch (opcao2)
+        {
+        case 1:
+            do
+            {
+                printf("cima \n");
+                i++;
+            } while (i <= 8);
+            break;
+        case 2:
+            do
+            {
+                printf("baixo \n");
+                i++;
+            } while (i <= 8);
+            break;
+        case 3:
+            do
+            {
+                printf("esquerda \n");
+                i++;
+            } while (i <= 8);
+            break;
+        case 4:
+            do
+            {
+                printf("direita \n");
+                i++;
+            } while (i <= 8);
+            break;
+        case 5:
+            do
+            {
+                printf("cima direita \n");
+                i++;
+            } while (i <= 8);
+            break; 
+        case 6:
+            do
+            {
+                printf("cima esquerda \n");
+                i++;
+            } while (i <= 8);
+            break;      
+        case 7:
+            do
+            {
+                printf("baixo direita \n");
+                i++;
+            } while (i <= 8);
+            break; 
+        case 8:
+            do
+            {
+                printf("baixo esquerda \n");
+                i++;
+            } while (i <= 8);
+            break; 
+       default:
+            printf("Opção invalida \n");
+        break;
+       }
+
+        break;          
+    default:
+        printf("Opção invalida! \n");
+        break;
+    }
+    
+    
     return 0;
 }
