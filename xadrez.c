@@ -131,56 +131,56 @@ int main() {
             {
                 printf("cima \n");
                 i++;
-            } while (i <= 8);
+            } while (i <= 7);
             break;
         case 2:
             do
             {
                 printf("baixo \n");
                 i++;
-            } while (i <= 8);
+            } while (i <= 7);
             break;
         case 3:
             do
             {
                 printf("esquerda \n");
                 i++;
-            } while (i <= 8);
+            } while (i <= 7);
             break;
         case 4:
             do
             {
                 printf("direita \n");
                 i++;
-            } while (i <= 8);
+            } while (i <= 7);
             break;
         case 5:
             do
             {
                 printf("cima direita \n");
                 i++;
-            } while (i <= 8);
+            } while (i <= 7);
             break; 
         case 6:
             do
             {
                 printf("cima esquerda \n");
                 i++;
-            } while (i <= 8);
+            } while (i <= 7);
             break;      
         case 7:
             do
             {
                 printf("baixo direita \n");
                 i++;
-            } while (i <= 8);
+            } while (i <= 7);
             break; 
         case 8:
             do
             {
                 printf("baixo esquerda \n");
                 i++;
-            } while (i <= 8);
+            } while (i <= 7);
             break; 
        default:
             printf("Opção invalida \n");
